@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>SurveyWeb</title>
+  </head>
+  <body>
+    <div id="selectionModal" class="selectionModal">
+      <div class="selectionContainer" id="selectionContainer">
+        <p class="close">&times;</p>
+        <div class="description">
+          <h1>Choose 2 or more favorites</h1>
+          <p>
+            For optimal user experience and more accurate results, surveys will
+            be tailored to the user.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="myModal" class="modal">
+      <div class="container" id="container">
+        <span class="close">&times;</span>
+        <div class="form-container sign-up-container">
+          <form action="#">
+            <h1>Create Account</h1>
+            <span>Use your email for registration</span>
+            <input type="text" placeholder="Name" id="signUpName" />
+            <input type="email" placeholder="Email" id="signUpEmail" />
+            <input type="password" placeholder="Password" id="signUpPassword" />
+            <input
+              type="password"
+              placeholder="Confirm Password"
+              id="confirmSignUpPassword"
+            />
+            <button class="signUp">Sign Up</button>
+            <p id="passwordNotMatch"></p>
+          </form>
+        </div>
+        <div class="form-container sign-in-container">
+          <form action="#">
+            <h1>Sign in</h1>
+            <div class="loginOptions">
+              <input type="radio" id="1" name="login" value="admin" />
+              <label for="admin">Admin</label><br />
+              <input type="radio" id="0" name="login" value="user" />
+              <label for="user">User</label><br />
+            </div>
+            <span>Enter your account details</span>
+            <input type="name" placeholder="Name" id="signInName" />
+            <input type="password" placeholder="Password" id="signInPassword" />
+            <a href="#">Forgot your password?</a>
+            <button class="signIn">Sign In</button>
+            <p id="incorrectPassword"></p>
+            <br />
+          </form>
+        </div>
+        <div class="overlay-container">
+          <div class="overlay">
+            <div class="overlay-panel overlay-right">
+              <h1>Welcome Back!</h1>
+              <p>
+                To keep connected with us please login with your personal info
+              </p>
+              <button class="ghost" id="signUp">Sign Up</button>
+            </div>
+            <div class="overlay-panel overlay-left">
+              <h1>Hello, Friend!</h1>
+              <p>Enter your personal details and start your journey with us</p>
+              <button class="ghost" id="signIn">Sign In</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="firstContainer" id="firstContainer">
+      <div class="navBar">
+        <a href="#firstContainer">Home</a>
+        <a href="#secondContainer">About Us</a>
+        <a href="#fourthContainer"> Get In Touch</a>
+      </div>
+      <img src="./images/front3.jpg" alt="front" class="mainImg" />
+      <h1 class="heading">SurveyGuru</h1>
+      <p>Bringing people together to power the world's research.</p>
+      <button class="participate">Participate</button>
+      <div class="iconLine">
+        <a><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a><i class="fa fa-instagram" aria-hidden="true"></i> </a>
+      </div>
+    </div>
+    <div class="secondContainer" id="secondContainer">
+      <h1>More About Us</h1>
+      <img src="./images/aboutUs.png" alt="aboutUs" class="aboutUsImg" />
+      <div class="art"></div>
+      <div class="art2">
+        <p>
+          Data quality is a top priority for us here at SurveyGuru. We're on a
+          mission to empower great research, and we know that great research
+          starts with data you can trust. The top reason researchers come to us
+          is for the quality of our data, and we are so confident in the quality
+          of our participant pool that we decided to test it against other major
+          online recruitment platforms.
+        </p>
+      </div>
+    </div>
+    <div class="thirdContainer" id="thirdContainer">
+      <h1>Benefits</h1>
+      <div>
+        <img src="./images/people.png" alt="img1" />
+        <p>Surveys provide opportunities for scalability</p>
+      </div>
+      <div>
+        <img src="./images/anonymous.png" alt="img2" />
+        <p>
+          Survey respondents can stay anonymous with this research approach.
+        </p>
+      </div>
+      <div>
+        <img src="./images/time.png" alt="img3" />
+        <p>It is a research tool with fewer time constraints.</p>
+      </div>
+      <div>
+        <img src="./images/broad.png" alt="img4" />
+        <p>Surveys can cover every component of any topic.</p>
+      </div>
+    </div>
+    <div class="fourthContainer" id="fourthContainer">
+      <img src="./images/contact.png" alt="contact" />
+      <form
+      action="https://formspree.io/f/mbjwkvdl"
+      method="POST"
+        class="contact-me">
+        <p className="joinUs">Get In Touch !</p>
+        <input type="email" name="email" placeholder="Email.." className="joinInput" /><br />
+        <textarea id="taskDescriptionEdit" placeholder="What would you like to tell us?" name="w3review" rows="4" cols="50"></textarea>
+        <button className="joinButton">Send</button><br /><br />
+      </form>
+    </div>
+    <script type='module' src="script.js"></script>
+  </body>
+</html>

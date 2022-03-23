@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>User portal</title>
+  </head>
+  <body>
+    <div class="userPortal">
+      <div class="header">
+        <h1>SurveyGuru</h1>
+      </div>
+      <ul class="navbar">
+        <li><a class="active" href="#dashboard">Dashboard</a></li>
+        <li><a href="#surveys">Surveys</a></li>
+
+      </ul>
+
+      <!-- <div class="surveyModal" id="fashion">
+        <div class="surveyContent">
+          <div class="slideshow-container">
+            <button>Submit</button>
+            <h1>Fashion</h1>
+            <div class="mySlides">
+              <h2>Fashion to you is:</h2>
+              <p>Looking cool and hip</p>
+              <p>Looking sober and mature</p>
+              <p>Comfortability</p>
+              <p>A way to express my inner self</p>
+            </div>
+            <div class="mySlides">
+                <h2>Favorite fabric:</h2>
+                <p>Cotton</p>
+                <p>Lycra</p>
+                <p>Jeans</p>
+                <p>Silk</p>
+                <p>Linen</p>
+              </div>
+              <div class="mySlides">
+                <h2>Do you also buy accessories, shoes and makeup matching your clothes?</h2>
+                <p>Yes</p>
+                <p>No</p>
+              </div>
+              <div class="mySlides">
+                <h2>How much do you spend on buying clothes monthly?</h2>
+                <p>R0 - R100</p>
+                <p>R101 - R300</p>
+                <p>R301 - R500</p>
+                <p>R501 - R1000</p>
+                <p>Above R1000</p>
+              </div>
+              <div class="mySlides">
+                <h2>Which are the places you buy most of your clothes from?</h2>
+                <p>Supermarkets and shopping malls</p>
+                <p>Designer boutiques</p>
+                <p>Fashion shows and exhibitions</p>
+                <p>Branded retail outlets</p>
+              </div>
+              <div class="mySlides">
+                <h2>Have you ever bought clothes out of impulse and later regretted?</h2>
+                <p>Yes</p>
+                <p>No</p>
+              </div>
+              <div class="mySlides">
+                <h2>Do your friends complement your style?</h2>
+                <p>Yes</p>
+                <p>No</p>
+              </div>
+              <div class="mySlides">
+                <h2>Who is your fashion icon?</h2>
+                <input type="text" placeholder="Fashion icon"/>
+              </div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+
+          <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+          </div>
+        </div> -->
+        
+      <!-- <div class="surveyModal" id="survival">
+            <div class="surveyContent">
+              <div class="slideshow-container">
+                <button>Submit</button>
+                <h1>Survival</h1>
+                <div class="mySlides">
+                  <h2>You're stranded in the woods and you've run out of bottled water. You find a stream, but you know
+                      the water might not be completely safe to drink. What's the best way to try to purify it?
+                  </h2>
+                  <p>Filter the water through a piece of your clothing.</p>
+                  <p>Find a way to boil the water for about five minutes to kill off harmful organisms and bacteria.</p>
+                </div>
+                <div class="mySlides">
+                    <h2>You're on a hike by yourself and you accidentally slip into quicksand. Your first instinct is probably to panic,
+                        but what should you really do?
+                    </h2>
+                    <p>Try to remain calm, gently lay back in the quicksand, and let your legs slowly float to the top. Then carefully try to 
+                        see if you can reach the edge or get hold of a branch or something you can use to slowly pull yourself out.
+                    </p>
+                    <p>Immediately begin trying to thread water to keep yourself from going under.</p>
+                  </div>
+                  <div class="mySlides">
+                    <h2>You're at the bank to make a deposit when two armed men enter and attempt a robbery. One of these men focuses on getting 
+                        money from the tellers, while the other one threatens the customers and tells them to get on the ground. What's the safest thing to do 
+                        at this moment?
+                    </h2>
+                    <p>Avert your eyes from the robbers, get down as you're told and keep your hands in plain sight.</p>
+                    <p>Get down on the ground, but keep an eye on the robbers at all times so you can try to sneak a phone call to 
+                        the police when they're not looking.
+                    </p>
+                  </div>
+                  <div class="mySlides">
+                    <h2>You've been kidnapped and you're being held captive by a very disturbed man. Which of the following options is more likely to persuade your 
+                        captor to release you, or at lease keep you alive longer and give the police a chance to find you?
+                    </h2>
+                    <p>Talk calmly to your captor and tell him about yourself. Tell him your name, kind of life you live, and that you have loved ones who need you. </p>
+                    <p>Threaten your captor, or try to attack him the first chance you get.</p>
+                  </div>
+                  <div class="mySlides">
+                    <h2>You're driving in a blizzard and you slide of the road into a ditch. What's your safest course of action?</h2>
+                    <p>Stay with your car and try to use your cellphone to call for help.</p>
+                    <p>Call a tow truck, and then go try to find a restaurant or gas station where you can wait for help to arrive.</p>
+                    <p>If you don't have a cell phone or can't get a signal, stay where you are, run the engine at ten minute intervals to stay warm, and honk 
+                        your horn repeatedly to draw attention to yourself if someone else passes by.</p>
+                  </div>
+                  <div class="mySlides">
+                    <h2>You and a friend are hiking and your friend is suddenly bitten by a snake. You're not sure if it's poisonous, so what should you do?</h2>
+                    <p>Tie a tourniquet above the bite, and then use your pocket knife to cut an X over the bite area and suck out as much venom as you can. 
+                        Then take your friend to the nearest hospital as quickly as you can.</p>
+                    <p>Take a quick photo of the snake if you can, and then try to call for help if you have a vell phone. Next, immobilize the body part that was bitten,
+                        and then take your friend to the nearest hospital as quickly as you can if you're sure help isn't coming to you.
+                    </p>
+                  </div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+    
+              <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+              </div>
+        </div> -->
+  
+      <!-- <div class="surveyModal" id="funny">
+        <div class="surveyContent">
+          <div class="slideshow-container">
+            <button>Submit</button>
+            <h1>Funny</h1>
+            <div class="mySlides">
+                <h2>Would you rather</h2>
+                <p>Eat a stranger's toenails clippings once a week</p>
+                <p>Have everything smell like rotten eggs</p>
+            </div>
+            <div class="mySlides">
+              <h2>Would you rather</h2>
+              <p>Always have bad gas</p>
+              <p>Always have really dry mouth</p>
+            </div>
+            <div class="mySlides">
+                <h2>Would you rather</h2>
+                <p>live by “Hakuna Matata”</p>
+                <p>“YOLO”</p>
+            </div>
+            <div class="mySlides">
+                <h2>Would you rather</h2>
+                <p>Lose the ability to lie</p>
+                <p>Believe everything you are told</p>
+            </div>
+            <div class="mySlides">
+                <h2>Would you rather</h2>
+                <p>Know how you will die</p>
+                <p>Know when you will die</p>
+            </div>
+            <div class="mySlides">
+                <h2>Would you rather</h2>
+                <p>Live in a real haunted house</p>
+                <p>Live in the middle of a dessert</p>
+            </div>
+            <div class="mySlides">
+                <h2>Would you rather</h2>
+                <p>Be the person who flips the switch during executions</p>
+                <p>Be the judge who decides who should be executed</p>
+            </div>
+            <div class="mySlides">
+                <h2>Would you rather</h2>
+                <p>Always have the urge to pee </p>
+                <p>Have to always wear a diaper</p>
+            </div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+
+          <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+          </div>
+        </div> -->
+      
+      <!-- <div class="surveyModal" id="social">
+            <div class="surveyContent">
+              <div class="slideshow-container">
+                <button>Submit</button>
+                <h1>Social</h1>
+                <div class="mySlides">
+                    <h2>What do you understand by the social standards and beliefs?</h2>
+                    <input type="text" placeholder="Type in your answer"/>
+                </div>
+                <div class="mySlides">
+                  <h2>How do you rate your social skills and awareness?</h2>
+                  <p>Excellent</p>
+                  <p>Very Effective</p>
+                  <p>Good</p>
+                  <p>Average</p>
+                </div>
+                <div class="mySlides">
+                    <h2>According to you, what type of social environment and facilities are required nowadays?</h2>
+                    <input type="text" placeholder="Type in your answer"/>
+                </div>
+                <div class="mySlides">
+                    <h2>Are you satisfied with your social security benefits?</h2>
+                    <p>Yes</p>
+                    <p>No</p>
+                </div>
+                <div class="mySlides">
+                    <h2>DO you think political conditions can harm your fundamental rights?</h2>
+                    <p>Yes</p>
+                    <p>No</p>
+                </div>
+                <div class="mySlides">
+                    <h2>Are you comfortable with the employment policies initated in your region?</h2>
+                    <p>Yes</p>
+                    <p>No</p>
+                </div>
+                <div class="mySlides">
+                    <h2>Please write a little more to help us in understand your social views?</h2>
+                    <input type="text" placeholder="Type in your answer"/>
+                </div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+    
+              <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+              </div>
+            </div> -->
+    </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

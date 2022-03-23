@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <canvas id="myChart" width="400" height="200"></canvas>
+    <script>
+      let testTemplate = [];
+      fetch("test.txt")
+        .then((response) => response.text())
+        .then((data) => {
+          let textByLine = data.split("\n");
+          textByLine.forEach((line) => {
+            if (line.split("--") != "") {
+              testTemplate.push(line.split("--"));
+            }
+          });
+        });
+
+      setTimeout(() => {
+        let answers = [];
+
+        testTemplate.forEach((line) => {
+          answers.push(line[2]);
+        });
+
+        const count = {};
+        const result = [];
+
+        answers.forEach((item) => {
+          if (count[item]) {
+            count[item] += 1;
+            return;
+          }
+          count[item] = 1;
+        });
+
+        for (let prop in count) {
+          if (count[prop] >= 2) {
+            result.push(prop);
+          }
+        }
+
+        Object.entries(count).forEach((item) => {
+            testTemplate.forEach((line) => {
+                if (line.includes(item[0])) {
+                    line.push(item[1]);
+                }
+            })
+        });
+
+        console.log(testTemplate)
+
+        testTemplate.forEach(test => {
+            console.log(test)
+            
+        })
+        const ctx = document.getElementById("myChart").getContext("2d");
+        const myChart = new Chart(ctx, {
+          type: "bar",
+          data: {
+            labels: testTemplate[0][1].split(".,"),
+            datasets: [
+              {
+                label: `${testTemplate[0][0]}`,
+                // if() {
+                data: [2, 1],
+                // },
+                backgroundColor: [
+                  "rgba(255, 99, 132, 0.2)",
+                  "rgba(54, 162, 235, 0.2)",
+                ],
+                borderColor: ["rgba(255, 99, 132, 1)", "rgba(54, 162, 235, 1)"],
+                borderWidth: 1,
+              },
+            ],
+          },
+        });
+      }, 2000);
+    </script>
+  </body>
+</html>
