@@ -729,7 +729,7 @@ function displayAvailableSurveys() {
                                             mySlidesHolder += `<div class="mySlides">
                                                                 <h2>${question.Text}</h2>
                                                                     ${myAnswers}
-                                           
+                                        
                                                             </div>`
 
                                             mySlides = document.createElement('div');
