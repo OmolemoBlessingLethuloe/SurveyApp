@@ -43,7 +43,7 @@ To get a local copy up and running follow these simple steps.
 ### To clone the repo to your local repository:
 
 ``` bash
-git clone https://github.com/OmolemoBlessingLethuloe/Blessings.web
+git clone https://github.com/OmolemoBlessingLethuloe/SurveyApp.git
 ``` 
 
 ``` bash
